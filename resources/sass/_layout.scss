@@ -1,0 +1,186 @@
+/***********************************************************************************************
+                                    PARTIE HEADER
+************************************************************************************************/
+
+/*---------------------------  GESTION DU BOUTTON RENDEZ-VOUS --------------------------*/
+.btn-rendez-vous{
+    background-color:$pink;
+    border-radius:10px;
+    color:$white;
+    padding: 3px 20px 3px 20px;
+    text-align: center;
+    letter-spacing:3px;
+    font-weight: bold;
+    font-size:1.1rem;
+        &:hover{
+            color:$white;
+        }
+}
+.size-btn-margin-md{
+    @include media-breakpoint-down(md){
+        margin-right: 106px;
+    }
+}
+.logo-teresa{
+    @include media-breakpoint-down(lg){
+        margin-left:-24px;
+    }
+    
+}
+
+/*---------------------------  GESTION DU NAVARBAR -----------------------------------------*/
+
+#navbarNav{
+    @include media-breakpoint-up(lg){
+        border-bottom:$dark solid 1px;
+
+    }
+
+    /*NAVBAR PAR DEFAULT*/
+
+    margin-left: 110px;
+    .custom-nav{
+        li{
+            font-size:1.5rem;
+            a{
+                margin-right:20px;
+            }
+        }
+    }
+    
+    .add-margin-icon-navbar{
+        li {
+            >a{
+                margin-right: 8px;
+            }
+        }
+    }
+
+   /*MEDIA QUERIE  NAVBAR*/
+   @include media-breakpoint-down(xl){
+    margin-left:0px;
+    .custom-nav{
+        li{
+            font-size:1rem;
+            a{
+                margin-right:0px;
+            }
+        }
+    }
+    .add-margin-icon-navbar{
+        li {
+            >a{
+                margin-right:0px;
+            }
+        }
+    }
+}
+
+    @include media-breakpoint-down(lg){
+        margin-left:0px;
+        .custom-nav{
+            li{
+                font-size:.7rem;
+                a{
+                    margin-right:0px;
+                }
+            }
+        }
+        .add-margin-icon-navbar{
+            li {
+                >a{
+                    margin-right:0px;
+                }
+            }
+        }
+    }
+    
+
+    @include media-breakpoint-down(md){
+        margin-left:0px;
+        .custom-nav{
+            li{
+                font-size:.8rem;
+                a{
+                    margin-right:0px;
+                }
+            }
+        }
+        .add-margin-icon-navbar{
+            li {
+                >a{
+                    margin-right:0px;
+                }
+            }
+        }
+        
+    }
+}
+
+/*--------------------------------- GESTION DU SLIDER -------------------------------------------*/
+.shooting-position{
+    bottom: 0px;
+    left: 0px;
+    color:$white;
+    font-size: 7rem;
+    transform: translate(50%,-23%);
+    @include media-breakpoint-down(lg){
+        font-size: 3rem;
+    }
+    @include media-breakpoint-down(md){
+        font-size: 2rem;
+    }
+   
+    @include media-breakpoint-down(xs){
+        font-size: 1rem;
+    }   
+}
+ 
+/*******************************************************************************************************************
+                                            PARTIE FOOTER
+*********************************************************************************************************************/
+
+
+/*-------------------------------- MODIFICATION GENERAL SUR LE FOOTER -------------------------*/
+
+footer{
+    font-size:.8rem;
+}
+
+
+/*--------------- GESTION DU PADDING ET MARGIN SUR LES LISTES DU FOOTER ----------------------*/
+
+.padidng-ul{
+    padding-left: 97px;
+    @include media-breakpoint-down(md) {
+        padding-left: 0px;
+    }
+}
+
+.add-margin-li{
+    li{
+        margin-bottom: 21px;
+        a{
+            font-weight:bolder;
+            color: $dark;
+        }
+    }
+}
+
+
+/*--------------- GESTION DE LA SIZE ET DES EPACES ENTRE LES LETTRES DU COPYRIGHT ------------*/
+
+.letter-space{
+    letter-spacing: .2rem;
+}
+
+.size-copyright{
+    font-size: 0.7rem;
+    @include media-breakpoint-down(lg) {
+        font-size: 0.6rem;
+    }
+    @include media-breakpoint-down(md) {
+        
+        font-size: 0.5rem;
+    }
+}

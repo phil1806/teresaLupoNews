@@ -1,0 +1,23 @@
+/*************************************************************************************************************************
+                                TOUS LES ELEMENTS UTILITAIRES ET REUTILISABLES
+**************************************************************************************************************************/
+
+/*MIXINS  POUR LA GESTION DES MARGES*/
+
+@mixin marge($top,$left,$bottom,$right){
+    margin-top:$top;
+    margin-right:$right;
+    margin-bottom: $bottom;
+    margin-left:$left;
+}
+
+
+
+
+
+
+
+
+
+
+

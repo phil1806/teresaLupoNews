@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','pages.accueil')->name('page.accueil');
+Route::view('/actualite', 'pages.actualites')->name('page.actualite');
+Route::view('/contact', 'pages.contact')->name('page.contact');
+Route::view('/réalisations', 'pages.realisations')->name('page.realisation');
+Route::view('/tarifs', 'pages.tarifs')->name('page.tarif');

@@ -1,3 +1,8 @@
-//import des modules bootstrap
-
-@import"../../node_modules/bootstrap/scss/bootstrap.scss";
+//import des modules bootstra
+@import 'variables';
+@import 'bootstrap/override';
+@import 'bootstrap/bootstrap';
+@import 'mixins';
+@import 'fonts';
+@import 'layout';
+@import 'content';

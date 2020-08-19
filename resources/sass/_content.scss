@@ -1,0 +1,281 @@
+/***************************************************************************************************************
+                                        PARTIE BODY
+****************************************************************************************************************/
+
+/*----------------------------- MODIFICATION GENERALE DANS BODY ---------------------*/
+body{
+    position: relative;
+    font-family: "EBGaramond";
+    .font-cottage{
+        font-family: "cottage";
+    }
+   h1{
+       color:$info;
+   }
+}
+
+
+/*----------------------------- CLASSE SPECIFIQUE  ---------------------*/
+
+/*Custom du title => Terésa Lupo dans  la page index*/
+.custom-title{
+    font-size:4rem;
+    @include media-breakpoint-up(xl) {
+        font-size:4rem;  
+    }
+}
+
+/*Ajout des marges sur content (main) de la page nos réalisations */
+.add-margin-realisation{
+    margin:77px 77px ;
+}
+
+
+/*custom des articles et list*/
+.custom-article{
+    margin-left: -51px;
+    
+}
+.custom-ul{
+    font-weight: bold;
+    &.custom-li{
+        li{
+            margin-bottom:0px;
+            @include media-breakpoint-up(xl){
+                margin-bottom:0px;
+            }
+        }
+    }
+}
+
+/*ajout des marges negatives */
+.marge-negative{
+    margin: 0;
+    &.marge-top-neg-1{
+        @include media-breakpoint-up(md){
+            margin: -45px 0 0 0 ;
+        }
+    }
+    &.marge-left-neg{
+      
+        @include media-breakpoint-up(lg){
+            margin: 0 0 0 -51px; 
+        }
+      
+    }
+    &.marge-top-neg-2{
+        @include media-breakpoint-up(lg){
+            margin: -84px 0 0 0;
+        }
+    }
+}
+
+/*ajout des marges postive*/
+.marge-positive{
+    margin:0;
+    &.marge-tp-bt-posi{
+        margin:77px 77px; 
+        @include media-breakpoint-down(lg){
+            margin:10px 10px; 
+        }
+    }
+    &.marge-tp-left-bt-posi{
+        margin:48px 120px 48px; 
+        @include media-breakpoint-down(md){
+            font-size: .8rem;
+            margin:48px 0px 48px
+        }
+    }
+
+}
+.title-tarif{
+    @include media-breakpoint-down(sm){
+        font-size:4rem;
+    }
+}
+.title-realisation{
+    @include media-breakpoint-down(sm){
+        font-size:2rem;
+        padding: 0;
+
+    }
+}
+.width-img{
+    width:100%;
+    @include media-breakpoint-up(lg){
+        width: 75%;
+    }
+}
+
+
+/*----------------------------- MISE EN PLACE DU CIRCLE ELUE MEILEUR RE COIFEUSE 2020 ---------------------*/
+.circle-elue{
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:166px;
+    background-color:#925FA3 ;
+    top:0px;
+    right: 0px;
+    transform: translate(50%, 50%);
+
+    @include media-breakpoint-down(lg) { 
+        position:relative;  
+        width:245px;
+        height:245px;
+        border-radius:166px;
+        background-color:#925FA3 ;
+        top:0px;
+        right: 0px;
+        transform: none;
+        margin-top: -251px;
+        margin-right: 7PX;
+        p{
+            font-size:1.2rem;
+        }
+        a{
+            font-size: 1.2rem;
+        
+        }
+    }
+    
+    @include media-breakpoint-down(md) { 
+        position:relative;  
+        width:184px;
+        height:184px;
+        border-radius:166px;
+        background-color:#925FA3 ;
+        top:0px;
+        right: 0px;
+        transform: none;
+        margin-top: -188px;
+        margin-right: 7PX;
+        p{
+            font-size: .8rem;
+        }
+        a{
+            font-size: .7rem;
+        
+        }
+    }
+    @include media-breakpoint-down(sm) { 
+        position:relative;  
+        width:184px;
+        height:184px;
+        border-radius:166px;
+        background-color:#925FA3 ;
+        top:0px;
+        right: 0px;
+        transform: none;
+        margin-top:0px;
+        
+        p{
+            font-size: .8rem;
+        }
+        a{
+            font-size: .7rem;
+        }
+    }
+       
+}
+
+/*---------------------------------------------- CREATION D'UN NEW CONTAINER ------------------------------------------*/
+
+.container-small{
+  
+    @include make-container();
+    @include make-container-max-widths($container-max-widths,$grid-breakpoints);
+    @include media-breakpoint-only(xxl){
+         max-width: map-get($container-max-widths,'xl');
+
+    }
+}
+
+/*---------------------------------------------- CREATION DES CICLES BACKGROUND ------------------------------------------*/
+
+.cercle{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+
+} 
+
+.cercle-index-2{
+    clip-path: circle(50%);
+    background-color:$colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(-32%,24%);
+}
+.cercle-index-1{
+    clip-path: circle(39%);
+    background-color:$colorCercle-1;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(33%,-24%);
+}
+.cercle-tarif-2{
+    clip-path: circle(50%);
+    background-color:$colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(14%,49%);
+}
+.cercle-tarif-1{
+    clip-path: circle(50%);
+    background-color:$colorCercle-4;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(-41%,-12%);
+}
+
+.cercle-actus{
+    clip-path: circle(50%);
+    background-color:$colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(-43%,-9%);
+}
+
+.cercle-contact-2{
+    clip-path: circle(50%);
+    background-color:$colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(-18%,36%);
+}
+.cercle-contact-1{
+    clip-path: circle(39%);
+    background-color:$colorCercle-1;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(33%,-28%);
+}
+
+.cercle-realisation{
+    clip-path: circle(39%);
+    background-color:$colorCercle-3;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index:-2;
+    transform: translate(-19%,22%);
+}
