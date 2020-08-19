@@ -65,6 +65,14 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+        // ici on refference le disque ou l'on souhaite que les images soient stockées
+        'uploads' => [
+            'driver' => 'local',
+            'root' => public_path(),
+            'url' => '/upload/images',
+            'visibility' => 'public',
+        ],
+
     ],
 
 ];

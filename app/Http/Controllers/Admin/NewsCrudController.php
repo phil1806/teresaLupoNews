@@ -8,8 +8,6 @@ use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
  * Class NewsCrudController
- * @package App\Http\Controllers\Admin
- * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
 class NewsCrudController extends CrudController
 {
@@ -29,30 +27,34 @@ class NewsCrudController extends CrudController
         CRUD::setModel(\App\Models\News::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/news');
         CRUD::setEntityNameStrings('news', 'news');
+
+        // ajout du champ image
+        $this->crud->addField([
+            'label' => "News Image",
+            'name' => "image",
+            'type' => 'image',
+            'crop' => true, 
+            'aspect_ratio' => 0,
+            'disk'      => 'uploads', 
+            'prefix'    => 'uploads/images' 
+        ]);
+
+    
     }
 
     /**
      * Define what happens when the List operation is loaded.
      * 
-     * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
-     * @return void
      */
     protected function setupListOperation()
     {
         CRUD::setFromDb(); // columns
 
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
-         */
+       
     }
 
     /**
      * Define what happens when the Create operation is loaded.
-     * 
-     * @see https://backpackforlaravel.com/docs/crud-operation-create
-     * @return void
      */
     protected function setupCreateOperation()
     {
@@ -60,18 +62,11 @@ class NewsCrudController extends CrudController
 
         CRUD::setFromDb(); // fields
 
-        /**
-         * Fields can be defined using the fluent syntax or array syntax:
-         * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
-         */
+       
     }
 
     /**
      * Define what happens when the Update operation is loaded.
-     * 
-     * @see https://backpackforlaravel.com/docs/crud-operation-update
-     * @return void
      */
     protected function setupUpdateOperation()
     {
