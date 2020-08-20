@@ -38,6 +38,12 @@ class NewsCrudController extends CrudController
             'disk'      => 'uploads', 
             'prefix'    => 'uploads/images' 
         ]);
+    // Date
+            $this->crud->addField([   
+            'name'  => 'dateDuJour',
+            'label' => 'Date of days',
+            'type'  => 'date'
+        ]);
 
     
     }

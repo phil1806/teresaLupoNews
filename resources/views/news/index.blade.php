@@ -29,18 +29,19 @@ actualites
                         <div class="card shadow">
                             <div class="row">
                                 <div class="col-12">
-                                    <img src="{{ asset($new->image) }}" alt="teresa lupo " class="card-img img-fluid">
+                                    <img src="{{ asset($new->image) }}" alt="teresa lupo " class="card-img img-fluid h-1OO">
                                 </div>
                                 <div class="col-12">
                                     <div class="card-body h-100 p-4">
                                         <div class="">
-                                            <div class="card-title h2 mt-4">{{\Carbon\Carbon::parse($new->created_at)->format('d-M-Y') }}</div>
+                                            <div class="card-title display-4">{{ $new->title }}</div>
+                                            <div class="h4">{{\Carbon\Carbon::parse($new->created_at)->format('d-M-Y') }}</div>
                                             <div class="card-text">
                                                 <p>{{ $new->description}}
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="text-bottom">
+                                        <div class="text-bottom mt-2">
                                             <button type="button" class="btn btn-outline-secondary">LIRE LA SUITE </button>
                                         </div>
                                     </div>
@@ -56,12 +57,13 @@ actualites
                             <div class="card shadow">
                                 <div class="row">
                                     <div class=" col-12 col-sm-8">
-                                        <img src="{{ asset($new->image) }}      " alt="instructeur" class="card-img-top img-fluid">
+                                        <img src="{{ asset($new->image) }}" alt="instructeur" class="h-100 card-img-top img-fluid">
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="card-body p-4 d-flex flex-column align-items-center h-100">
                                             <div class="mb-auto">
-                                                <div class="card-title h2 mt-4">{{\Carbon\Carbon::parse($new->created_at)->format('d-M-Y') }}</div>
+                                                <div class="card-title display-4">{{ $new->title }}</div>
+                                                <div class="h4">{{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                                 <div class="card-text">{{ $new->description}}
                                                 </div>
                                             </div>
@@ -84,7 +86,8 @@ actualites
                                 <div class="col-sm-4 col-12 order-2 order-sm-1">
                                     <div class="card-body p-4 d-flex flex-column align-items-center h-100 ">
                                         <div class="mb-auto">
-                                            <div class="card-title h2 mt-2">{{\Carbon\Carbon::parse($new->created_at)->format('d-M-Y') }}</div>
+                                            <div class="card-title display-4">{{ $new->title }}</div>
+                                            <div class=" h4">{{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                             <div class="card-text">{{ $new->description}}</div>
                                         </div>
                                         <div class="text-bottom mt-2">
@@ -94,7 +97,7 @@ actualites
                                     </div>
                                 </div>
                                 <div class="col-sm-8 col-12 order-1 order-sm-2">
-                                    <img src="{{ asset($new->image) }}" alt="instructeur" class="card-img-top img-fluid">
+                                    <img src="{{ asset($new->image) }}" alt="instructeur" class=" h-100 card-img-top img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -109,18 +112,19 @@ actualites
                                 <div class="col-sm-4 col-12 order-2 order-sm-1">
                                     <div class="card-body p-4 d-flex flex-column align-items-center h-100">
                                         <div class="mb-auto">
-                                            <div class="card-title h2 mt-4">
-                                                {{\Carbon\Carbon::parse($new->created_at)->format('d-M-Y') }}</div>
+                                            <div class="card-title display-4">{{ $new->title }}</div>
+                                            <div class="h4">
+                                                {{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                             <div class="card-text"> {{ $new->description}}</div>
                                         </div>
-                                        <div class="text-bottom">
+                                        <div class="text-bottom mt-2">
                                             <button type="button" class="btn btn-outline-secondary">LIRE LA SUITE </button>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class=" col-12 col-sm-8 order-1 order-sm-2">
-                                    <img src="{{ asset($new->image) }}" alt="teresa lupo" class="card-img-top img-fluid">
+                                    <img src="{{ asset($new->image) }}" alt="teresa lupo" class="h-100 card-img-top img-fluid">
                                 </div>
                             </div>
                         </div>

@@ -17,7 +17,7 @@ class newsController extends Controller
         // je fais appel au model
         $news = News::orderBy('id','desc')->take(4)->get();
         $i = 0;
-        return view('pages.actualites',compact('news','i'));
+        return view('news.index',compact('news','i'));
         
     }
 }
