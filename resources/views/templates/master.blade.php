@@ -10,7 +10,7 @@
     <!-- HEAD -->
     @include('templates.partials._head')
     
-	<body>
+	<body data-baseUrl ="{{url('/')}}">
 		<!-- HEADER -->
          @include('templates.partials._header')
 
