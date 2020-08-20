@@ -19,4 +19,5 @@ Route::view('/tarifs', 'pages.tarifs')->name('page.tarif');
   CTRL: newsController
   ACTION: INDEX
 */
-Route::get('/actualite','newsController@index')->name('page.actualite');
+Route::get('actualite', 'newsController@index')->name('page.actualite');
+
