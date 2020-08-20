@@ -10,8 +10,6 @@ use Backpack\CRUD\app\Models\Traits\CrudTrait;
 
 class News extends Model
 {
-
-
     /*
     |--------------------------------------------------------------------------
     | GLOBAL VARIABLES
