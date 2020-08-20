@@ -11927,35 +11927,35 @@ a.text-dark:focus {
 
 @font-face {
   font-family: "Cottage";
-  src: url(/fonts/Cottage.woff2?35a233b125190c37a236de0f7030e0a5) format("woff2"), url(/fonts/Cottage.woff?3f6f8cf364e4a5cd4173308314772694) format("woff"), url(/fonts/Cottage.ttf?0a29f6e9b53dfa5d51201116f983db35) format("ttf"), url(/fonts/Cottage.eot?cadb5c34e888e3a448170b989ebdb230) format("eot");
+  src: url("/Visual Studio Code/TeresaLupoNews/public/fonts/Cottage.woff2?35a233b125190c37a236de0f7030e0a5") format("woff2"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/Cottage.woff?3f6f8cf364e4a5cd4173308314772694") format("woff"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/Cottage.ttf?0a29f6e9b53dfa5d51201116f983db35") format("ttf"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/Cottage.eot?cadb5c34e888e3a448170b989ebdb230") format("eot");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "EBGaramond";
-  src: url(/fonts/EBGaramond-Regular.woff2?ff4de23940bddee14ef7f1e038a7ecae) format("woff2"), url(/fonts/EBGaramond-Regular.woff?1e1212dd0ca85b0c3b1b1718388d921e) format("woff"), url(/fonts/EBGaramond-Regular.ttf?ee04222beffb9d29189960d70249f6ff) format("ttf"), url(/fonts/EBGaramond-Regular.eot?b645f3439de2f0469cf5f328f2c8f194) format("eot");
+  src: url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Regular.woff2?ff4de23940bddee14ef7f1e038a7ecae") format("woff2"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Regular.woff?1e1212dd0ca85b0c3b1b1718388d921e") format("woff"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Regular.ttf?ee04222beffb9d29189960d70249f6ff") format("ttf"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Regular.eot?b645f3439de2f0469cf5f328f2c8f194") format("eot");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "EBGaramond";
-  src: url(/fonts/EBGaramond-Italic.woff2?85d54460b808b25c6d26a8b29cb230df) format("woff2"), url(/fonts/EBGaramond-Italic.woff?7962b3d2096141969346ee45c77932b0) format("woff"), url(/fonts/EBGaramond-Italic.ttf?b999617b7a74e6af1bd80e2eb9d9a5a3) format("ttf"), url(/fonts/EBGaramond-Italic.eot?c7a5d789cc1bd6c31e4e86ea14cdba68) format("eot");
+  src: url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Italic.woff2?85d54460b808b25c6d26a8b29cb230df") format("woff2"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Italic.woff?7962b3d2096141969346ee45c77932b0") format("woff"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Italic.ttf?b999617b7a74e6af1bd80e2eb9d9a5a3") format("ttf"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Italic.eot?c7a5d789cc1bd6c31e4e86ea14cdba68") format("eot");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "EBGaramond";
-  src: url(/fonts/EBGaramond-Bold.woff2?6c9c9e860a33810405f3411d75d884ae) format("woff2"), url(/fonts/EBGaramond-Bold.woff?b442c08f33ec900d8cae2cf90d0c4407) format("woff"), url(/fonts/EBGaramond-Bold.ttf?719152a09def97718d13c623128956d3) format("ttf"), url(/fonts/EBGaramond-Bold.eot?2df24e61fad8c51cb52defe8d94a66c0) format("eot");
+  src: url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Bold.woff2?6c9c9e860a33810405f3411d75d884ae") format("woff2"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Bold.woff?b442c08f33ec900d8cae2cf90d0c4407") format("woff"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Bold.ttf?719152a09def97718d13c623128956d3") format("ttf"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-Bold.eot?2df24e61fad8c51cb52defe8d94a66c0") format("eot");
   font-weight: Bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "EBGaramond-SemiBoldItalic";
-  src: url(/fonts/EBGaramond-SemiBoldItalic.woff2?83fae9c5ec355042d9e17e5162a0196d) format("woff2"), url(/fonts/EBGaramond-SemiBoldItalic.woff?3c55bd849f212ff6c6fbbdad95714c73) format("woff"), url(/fonts/EBGaramond-SemiBoldItalic.ttf?8fccaf63706568d4cf24bf43c20c9eec) format("ttf"), url(/fonts/EBGaramond-SemiBoldItalic.eot?0d97f42fb6f7579b58ff5ef09ada0b5e) format("eot");
+  src: url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-SemiBoldItalic.woff2?83fae9c5ec355042d9e17e5162a0196d") format("woff2"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-SemiBoldItalic.woff?3c55bd849f212ff6c6fbbdad95714c73") format("woff"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-SemiBoldItalic.ttf?8fccaf63706568d4cf24bf43c20c9eec") format("ttf"), url("/Visual Studio Code/TeresaLupoNews/public/fonts/EBGaramond-SemiBoldItalic.eot?0d97f42fb6f7579b58ff5ef09ada0b5e") format("eot");
   font-weight: Bold;
   font-style: italic;
 }
