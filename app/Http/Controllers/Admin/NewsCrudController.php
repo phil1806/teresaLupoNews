@@ -34,7 +34,7 @@ class NewsCrudController extends CrudController
             'name' => "image",
             'type' => 'image',
             'crop' => true, 
-            'aspect_ratio' => 0,
+            'aspect_ratio' => 1,
             'disk'      => 'uploads', 
             'prefix'    => 'uploads/images' 
         ]);
