@@ -14,10 +14,17 @@ class newsController extends Controller
     */
     public function index(){
 
-        // je fais appel au model
+        // je charge la liste des news via le model 
         $news = News::orderBy('id','desc')->take(4)->get();
         $i = 0;
-        return view('news.index',compact('news','i'));
-        
+        return view('news.index',compact('news','i'));   
     }
+
+    public function show(int $id){
+        
+        // je charge la liste des news via le model 
+        $new = News::find($id);
+        return view('news.show', compact('new'));
+    }
+
 }

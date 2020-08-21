@@ -1,7 +1,7 @@
 {{--
-    Chemin :/resources/views/pages/actualites.blade.php
+    Chemin :/resources/views/news/index.blade.php
     Description: affiche  le content de la page  des actualites
-    Données disponible: -- // --
+    Données disponible: $news array(array objet[('id, titre, image, description, content')]
 --}}
 
 @extends('templates.master')
@@ -34,15 +34,15 @@ actualites
                                 <div class="col-12">
                                     <div class="card-body h-100 p-4">
                                         <div class="">
-                                            <div class="card-title display-4">{{ $new->title }}</div>
-                                            <div class="h4">{{\Carbon\Carbon::parse($new->created_at)->format('d-M-Y') }}</div>
+                                            <h2 class="card-title font-weight-bold">{{ $new->title }}</h2>
+                                            <div class="h4">{{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                             <div class="card-text">
                                                 <p>{{ $new->description}}
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="text-bottom mt-2">
-                                            <button type="button" class="btn btn-outline-secondary">LIRE LA SUITE </button>
+                                           <a role="button" class="btn btn-outline-secondary" href="{{ URL::route('news.show',['id'=> $new->id,'slug'=>Str::slug($new->title, '-')]) }}">LIRE LA SUITE </a>
                                         </div>
                                     </div>
                                 </div>
@@ -62,13 +62,13 @@ actualites
                                     <div class="col-12 col-sm-4">
                                         <div class="card-body p-4 d-flex flex-column align-items-center h-100">
                                             <div class="mb-auto">
-                                                <div class="card-title display-4">{{ $new->title }}</div>
+                                                <h2 class="card-title font-weight-bold">{{ $new->title }}</h2>
                                                 <div class="h4">{{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                                 <div class="card-text">{{ $new->description}}
                                                 </div>
                                             </div>
                                             <div class="text-bottom mt-2">
-                                                <button type="button" class="btn btn-outline-secondary">LIRE LA SUITE </button>
+                                                 <a role="button" class="btn btn-outline-secondary" href="{{ URL::route('news.show',['id'=> $new->id,'slug'=>Str::slug($new->title, '-')]) }}">LIRE LA SUITE </a>
                                             </div>
 
                                         </div>
@@ -86,12 +86,12 @@ actualites
                                 <div class="col-sm-4 col-12 order-2 order-sm-1">
                                     <div class="card-body p-4 d-flex flex-column align-items-center h-100 ">
                                         <div class="mb-auto">
-                                            <div class="card-title display-4">{{ $new->title }}</div>
+                                            <h2 class="card-title font-weight-bold">{{ $new->title }}</h2>
                                             <div class=" h4">{{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                             <div class="card-text">{{ $new->description}}</div>
                                         </div>
                                         <div class="text-bottom mt-2">
-                                            <button type="button" class="btn btn-outline-secondary">LIRE LA SUITE </button>
+                                            <a role="button" class="btn btn-outline-secondary" href="{{ URL::route('news.show',['id'=> $new->id,'slug'=>Str::slug($new->title, '-')]) }}">LIRE LA SUITE </a>
                                         </div>
 
                                     </div>
@@ -112,13 +112,13 @@ actualites
                                 <div class="col-sm-4 col-12 order-2 order-sm-1">
                                     <div class="card-body p-4 d-flex flex-column align-items-center h-100">
                                         <div class="mb-auto">
-                                            <div class="card-title display-4">{{ $new->title }}</div>
+                                            <h2 class="card-title font-weight-bold">{{ $new->title }}</h2>
                                             <div class="h4">
                                                 {{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
                                             <div class="card-text"> {{ $new->description}}</div>
                                         </div>
                                         <div class="text-bottom mt-2">
-                                            <button type="button" class="btn btn-outline-secondary">LIRE LA SUITE </button>
+                                            <a role="button" class="btn btn-outline-secondary" href="{{ URL::route('news.show',['id'=> $new->id,'slug'=>Str::slug($new->title, '-')]) }}">LIRE LA SUITE </a>
                                         </div>
 
                                     </div>

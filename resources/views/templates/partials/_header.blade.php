@@ -23,7 +23,7 @@
                     <a class="nav-link" href="{{ URL::route('page.tarif') }}">TARIFS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ URL::route('page.actualite') }}">ACTUALITES</a>
+                    <a class="nav-link" href="{{ URL::route('news.index') }}">ACTUALITES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ URL::route('page.contact') }}">CONTACTS</a>
