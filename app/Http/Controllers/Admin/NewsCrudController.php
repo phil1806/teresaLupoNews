@@ -34,18 +34,43 @@ class NewsCrudController extends CrudController
             'name' => "image",
             'type' => 'image',
             'crop' => true, 
-            'aspect_ratio' => 1,
+            'aspect_ratio' =>-1,
             'disk'      => 'uploads', 
             'prefix'    => 'uploads/images' 
         ]);
-    // Date
+        // Ajourt du champ Date
             $this->crud->addField([   
             'name'  => 'dateDuJour',
             'label' => 'Date of days',
             'type'  => 'date'
         ]);
 
-    
+        // Ajourt du champ title
+        $this->crud->addField([
+            'name'  => 'title',
+            'label' => 'Title',
+            'type'  => 'text'
+
+        ]);
+
+        // Ajourt du champ description
+        $this->crud->addField([
+            'name'  => 'description',
+            'label' => 'Description',
+            'type'  => 'textarea'
+
+        ]);
+
+
+        // Ajourt du champ content sous le format TinyMCE
+        $this->crud->addField([
+            'name'  => 'content',
+            'label' => 'Description',
+            'type'  => 'tinymce'
+                
+        ]);
+
+       
     }
 
     /**

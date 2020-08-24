@@ -26,7 +26,7 @@ actualites
             <div class="col-md-7">
                 <h1 class="display-4">{{ $new->title}}</h1>
                 <div class="font-weight-bold h4">{{\Carbon\Carbon::parse($new->dateDuJour)->format('d-M-Y') }}</div>
-                <P>{{ $new->content }}</P>
+                <P>{!!  $new->content !!}</P>
                 <div class="text-bottom">
                     <a role="button" class="btn btn-outline-secondary" href="{{ URL::route('news.index')}}">TOUTES LES NEWS</a>
                 </div>
