@@ -16,11 +16,28 @@ class NewsCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
+    use \Backpack\CRUD\app\Http\Controllers\Operations\ReorderOperation;
+
+
+
+    /**
+     * type: function
+     * nom: setupReorderOperation
+     * Desc: permet implementer le réorder des news dans Admin 
+     */
+
+    protected function setupReorderOperation()
+    {
+        // define which model attribute will be shown on draggable elements 
+        $this->crud->set('reorder.label', 'title');
+        
+        //definir le nombre d'inbrecation => mettre 0 pour l'infinie
+        $this->crud->set('reorder.max_level', 1);
+    }
+
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
-     * 
-     * @return void
      */
     public function setup()
     {

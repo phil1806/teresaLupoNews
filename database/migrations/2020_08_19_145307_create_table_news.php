@@ -20,6 +20,10 @@ class CreateTableNews extends Migration
             $table->text('description');
             $table->longText('content');
             $table->dateTime('dateDuJour');
+            $table->unsignedInteger('parent_id')->default(0)->nullable();
+            $table->unsignedInteger('lft')->default(0);
+            $table->unsignedInteger('rgt')->default(0);
+            $table->unsignedInteger('depth')->default(0);
             $table->timestamps();
         });
     }

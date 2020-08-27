@@ -15,7 +15,7 @@ class newsController extends Controller
     public function index(){
 
         // je charge la liste des news via le model 
-        $news = News::orderBy('id','desc')->take(4)->get();
+        $news = News::orderBy('lft','asc')->take(4)->get();
         $i = 0;
         return view('news.index',compact('news','i'));   
     }
