@@ -17,3 +17,7 @@ mix.setResourceRoot("/Visual Studio Code/TeresaLupoNews/public")
 
  
 
+
+// mix.setResourceRoot("//philmymusicband.000webhostapp.com/public_html")
+//     .js('resources/js/app.js', 'public/js')
+//     .sass('resources/sass/app.scss', 'public/css');

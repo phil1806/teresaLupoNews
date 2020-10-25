@@ -27,7 +27,7 @@ Contact
             <div class="d-flex flex-column flex-sm-row flex-lg-column justify-content-sm-around">
                 <aside class=" h-100 mb-2 mb-md-5 mt-5 mt-md-0">
                     <h2 class="h5 mb-2 mb-lg-4  font-weight-bold">CONTACT</h2>
-                    <P>VOIE DES JARDINETS, 8 <br>4537 VERLAINE <br>+32 470 65 04 46<2P>
+                    <P>VOIE DES JARDINETS, 8 <br>4537 VERLAINE <br>+32 470 65 04 46<P>
                 </aside>
                 <aside class="mt-md-0 mt-5">
                     <h2 class="h5 mb-2 mb-lg-4 font-weight-bold">HEURES D'OUVERTURE <br>UNIQUEMENT SUR RDV.</h2>
